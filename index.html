@@ -1,100 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="utf-8">
     <title>Russell Pichie Resume</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
     <style>
+        /* Internal CSS styles in here */
         body {
-            background-color: teal; /* changes background to Teal */
+            background-color: teal;
         }
 
-        td.text-container { /* Sets parameters for text container */
+        /* Create a horizontal rule (hr) with a 3px green border */
+        .green-hr {
+            border: 3px solid green;
+        }
+
+        /* Width of the horizontal rule to span 50% of the page */
+        .half-width-hr {
+            width: 50%;
+        }
+
+        /* Move the firepit image to the right */
+        .image-container {
+            text-align: right;
+        }
+
+        /* Center the horizontal rule within its parent element */
+        .center-hr {
             text-align: center;
         }
 
-        td {
-            font-size: 36px;
+        /* Define styling for the profile image */
+        .portrait-image {
+            background-image: url('Russell1.jpg');
+            background-size: cover; 
+            width: 250px;
+            height: 300px;
         }
 
-        h2 q {
-            font-size: 20px;
-            font-style: italic;
+        .text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
-        .quote-author {
-            font-size: 16px;
-            font-style: normal;
-            margin-top: 10px;
+        .center {
+            text-align: center;
         }
 
-               td.image-container {
-            text-align: right; /* Align content to the right */
+        /* Personal Section with teal background */
+        .personal {
+            background-color: teal;
+        }
+
+        /* Business Section with light blue background */
+        .business {
+            background-color: lightblue;
         }
     </style>
 </head>
-
 <body>
-    <table>
-        <tr>
-            <td>
-                <img src="Russell1.JPG" alt="Picture of Russ Pichie receiving promotion" width="250" height="300" usemap="#promotion">
-                 <map name="promotion">
-                    <area shape="rect" coords="70,110,135,170" alt="promotion" href="https://en.wikipedia.org/wiki/Battlefield_promotion" >
-                </map>
-            </td>
-            <td class="text-container">
-                <h1>Russell Pichie</h1>
-                <h2>
-                    <q> 
-                        Be justified in your convictions. Be completely committed. Earn what you want and need rather than waiting for others to give you what you desire
-                    </q>
-                    <span class="quote-author">- Richard Rahl, Master of D'Hara</span>
-                </h2>
-            </td>
-            
-                       <td class="image-container">
-                <img src="firepit.JPG" alt="firepit" width="250" height="300">
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <div style="text-align: center;"></div>
+    <!-- Header Section -->
+    <div id="center-hr"> 
+        <hr class="green-hr half-width-hr">
+    </div>
 
-    <a href="aboutme.html">
-        <img src="aboutme.jpg" alt="About me">
-    </a>
-    <br>
-    <br>
+    <!-- Profile Section -->
+    <div class="section">
+        <table>
+            <tr>
+                <td>
+                    <img src="Russell1.jpg" alt="Picture of Russ Pichie receiving promotion" width="250" height="300" class="portrait-image">
+                </td>
+                <td class="text-container">
+                    <h1 class="center another-class">Russell Pichie</h1>
+                    <h2>
+                        <q>
+                            Be justified in your convictions. Be completely committed. Earn what you want and need rather than waiting for others to give you what you desire
+                        </q>
+                        <span class="quote-author">- Richard Rahl, Master of D'Hara</span>
+                    </h2>
+                </td>
+                <td class="image-container">
+                    <img src="firepit.jpg" alt="firepit" width="250" height="300" class="firepit-image">
+                </td>
+            </tr>
+        </table>
+    </div>
 
-    <a href="jobs.html">
-        <img src="myjobs.jpg" alt="My jobs">
-    </a>
-    <br>
-    <br>
+    <!-- Image Container Section -->
+    <div class="section">
+        <div class="image-container">
+            <div class="image left-image"></div>
+            <div class="image right-image"></div>
+        </div>
+    </div>
 
-    <a href="passionate.html">
-        <img src="passions.jpg" alt="my passions">
-    </a>
-    <br>
-    <br>
+    <!-- Horizontal Rule Section -->
+    <div class="section">
+        <hr>
+        <div style="text-align: center;"></div>
+    </div>
 
-    <a href="RussellPichieResume.html">
-        <img src="resume.jpg" alt="my resume">
-    </a>
-    <br>
-    <br>
-    <a href="https://www.google.com">
-        <img src="google.jpg" alt="google link">
-    </a>
-    
-    
-    <pre>
-        All that is gold does not glitter,
-        Not all those who wander are lost;
-        The old that is strong does not wither,
-        Deep roots are not reached by the frost.
-                                            J.R.R. Tolkien
-    </pre>
+    <!-- Links Section -->
+    <div class="personal">
+        <a href="aboutme.html">
+            <img src="aboutme.jpg" alt="About me" class="page-link">
+        </a>
+        <br>
+        <br>
+
+        <a href="jobs.html">
+            <img src="myjobs.jpg" alt="My jobs" class="page-link">
+        </a>
+        <br>
+        <br>
+
+        <a href="passionate.html">
+            <img src="passions.jpg" alt="my passions" class="page-link">
+        </a>
+        <br>
+        <br>
+    </div>
+
+    <!-- Resume and External Link Section -->
+    <div class="business">
+        <a href="RussellPichieResume.html">
+            <img src="resume.jpg" alt="my resume" class="page-link">
+        </a>
+        <br>
+        <br>
+        <a href="https://www.google.com">
+            <img src="google.jpg" alt="google link" class="external-link">
+        </a>
+        <br>
+        <br>
+    </div>
+
+    <!-- Pictures and Top Section -->
+    <div class="personal">
+        <a href="pictures.html">
+            <img src="pictures.png" alt="pictures" class="page-link">
+        </a>
+        <br>
+        <br>
+        <a href="index.html">
+            <img src="topof.png" alt="top of" class="page-link">
+        </a>
+    </div>
+
+    <!-- Ending Quote Section -->
+    <div class="section">
+        <pre style="color: gold;">
+            All that is gold does not glitter,
+            Not all those who wander are lost;
+            The old that is strong does not wither,
+            Deep roots are not reached by the frost.
+            J.R.R. Tolkien
+        </pre>
+    </div>
 </body>
-
 </html>

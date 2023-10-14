@@ -1,0 +1,53 @@
+/* Changes the background to teal */
+body {
+    background-color: teal;
+}
+
+/* Create a horizontal rule (hr) with a 3px green border */
+.green-hr {
+    border: 3px solid green;
+}
+
+/* Define the width of the horizontal rule to span 50% of the page */
+.half-width-hr {
+    width: 50%;
+}
+
+/* Move the firepit image to the right */
+.image-container {
+    text-align: right;
+}
+
+/* Center the horizontal rule */
+.center-hr {
+    text-align: center;
+}
+
+/* Define styling for the image */
+.profile-image {
+    background-image: url('Russell1.jpg');
+    background-size: cover; 
+    width: 250px;
+    height: 300px;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Personal Section with light blue background */
+.personal {
+    background-color: lightskyblue;
+}
+
+/* Business Section with a different background color teal */
+.business {
+    background-color: teal;
+}
